@@ -21,8 +21,8 @@
  *  0  => true
  *  -5 => false
  */
-function isPositive(/* number */) {
-  throw new Error('Not implemented');
+function isPositive(number) {
+  return number >= 0;
 }
 
 /**
@@ -38,8 +38,9 @@ function isPositive(/* number */) {
  *  -5, 0, 5      => 5
  *  -0.1, 0, 0.2  => 0.2
  */
-function getMaxNumber(/* a, b, c */) {
-  throw new Error('Not implemented');
+function getMaxNumber(a, b, c) {
+  const max = a > b ? a : b;
+  return max > c ? max : c;
 }
 
 /**
@@ -55,6 +56,7 @@ function getMaxNumber(/* a, b, c */) {
  * @return {boolean} True if the queen can capture the king, false otherwise.
  *
  * @example
+ * 1, 3    3, 5
  * {x: 1, y: 1}, {x: 5, y: 5} => true
  * {x: 2, y: 1}, {x: 2, y: 8} => true
  * {x: 1, y: 1}, {x: 2, y: 8} => false
@@ -288,11 +290,12 @@ function shuffleChar(/* str, iterations */) {
  * 123440   => 124034
  * 1203450  => 1203504
  * 90822    => 92028
- * 321321   => 322113
+ * 321321   => 322113  123123
  *
  * @param {number} number The source number
  * @returns {number} The nearest larger number, or original number if none exists.
  */
+
 function getNearestBigger(/* number */) {
   throw new Error('Not implemented');
 }
